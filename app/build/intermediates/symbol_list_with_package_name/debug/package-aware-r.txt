@@ -2993,6 +2993,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addButton
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3069,6 +3070,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3165,6 +3167,7 @@ id light
 id line1
 id line3
 id linear
+id list
 id listMode
 id list_item
 id locale
@@ -3281,6 +3284,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id record
 id rectangles
 id reverseSawtooth
 id right
@@ -3291,6 +3295,7 @@ id rounded
 id row_index_key
 id rtl
 id satellite
+id saveButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3391,6 +3396,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3549,7 +3555,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_main2
+layout activity_main3
 layout activity_page2
+layout adapter
 layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item

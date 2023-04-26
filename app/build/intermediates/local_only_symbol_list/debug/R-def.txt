@@ -15,7 +15,10 @@ id FirstFragment
 id SecondFragment
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
+id addButton
 id button
+id deleteButton
+id list
 id map
 id mapview
 id nav_graph
@@ -23,9 +26,15 @@ id nav_host_fragment_content_main
 id pb_horizontal
 id plain_text_input
 id progressBar
+id record
+id saveButton
 id textView
+id textView2
 layout activity_main
+layout activity_main2
+layout activity_main3
 layout activity_page2
+layout adapter
 layout content_main
 layout fragment_maps
 mipmap ic_launcher

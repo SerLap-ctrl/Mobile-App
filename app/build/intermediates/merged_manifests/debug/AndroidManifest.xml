@@ -47,7 +47,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Practice_2" >
-
+        <activity
+            android:name="com.example.practice_2.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name="com.example.practice_2.MainActivity2"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -79,7 +84,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
