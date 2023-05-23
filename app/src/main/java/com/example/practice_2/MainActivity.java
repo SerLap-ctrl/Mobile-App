@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.yandex.mapkit.MapKitFactory;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private int progress = 0;
@@ -57,11 +59,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 // Update interface
+                String[] texts = {"— Доктор, от меня ушла собака!\n" +
+                        "— А что вы ей сказали?\n" +
+                        "— Сказал «служить», а она взяла каску и пошла в армию.\n" +
+                        "\n", "Плывут две акулы вдоль побережья и вдруг видят виндсерфингиста. " +
+                        "Одна другой восхищенно: \n" +
+                        "— Вот это сервис — на подносе, да еще и с салфеткой!\n" +
+                        "\n", "Бесит, когда монстры под кроватью не стелят тебе постель\n" +
+                        "\n", "Преподаватель в возрасте \"бес в ребро\" объясняется студентке:\n" +
+                        "— За всю жизнь я любил только трех женщин: \n" +
+                        "— Маму, жену и, простите, как вас зовут?\n" +
+                        "\n","Дети, у которых были только печеньки и конфеты, из сладостей выложили " +
+                        "слово «пить».\n" +
+                        "\n","До скелета динозавра опять докопались какие — то археологи.\n" +
+                        "\n","Вот сидит баба, сидит... С виду — ничего не делает.\n" +
+                        "А на самом деле бесится, хочет тортик и ненавидит своих бывших и бывших " +
+                        "нынешнего.\n" +
+                        "Многозадачность...\n" +
+                        "\n"};
                 handler.post(new Runnable() {
                     @SuppressLint("UseCompatLoadingForDrawables")
                     public void run() {
                         pbHorizontal.setProgressDrawable(getDrawable(R.drawable.customprogressbar));
-                        tvProgressHorizontal.setText("Плохие лимоны после смерти попадают в лимонад");
+                        tvProgressHorizontal.setText(texts[new Random().nextInt(texts.length)]);
                         button.setEnabled(false);
                         button.setVisibility(View.INVISIBLE);
                     }
